@@ -16,7 +16,7 @@ CREATE TABLE Movies (
     title NVARCHAR(255) NOT NULL,
     yearOfRelease INT NOT NULL,
     genre NVARCHAR(255) NOT NULL,
-    rating FLOAT NULL
+    rating FLOAT NULL DEFAULT 0
 );
 
 -- Create the Users table to store user information
