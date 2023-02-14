@@ -18,7 +18,7 @@ namespace MoviesAPI.Models
         [MaxLength(255)]
         public string genre { get; set; }
 
-        public float rating { get; set; }
+        public double rating { get; set; }
 
         public virtual ICollection<Rating> Ratings { get; set; }
     }

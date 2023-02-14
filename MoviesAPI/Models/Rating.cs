@@ -14,7 +14,7 @@ namespace MoviesAPI.Models
         public int movie_id { get; set; }
 
         [Required]
-        public float rating { get; set; }
+        public Single rating { get; set; }
 
         public virtual User User { get; set; }
         public virtual Movie Movie { get; set; }

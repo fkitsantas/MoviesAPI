@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EBqyzqmxtFtISyajjhZeFq3WR5ewSHEDXBS8qt9WQlUsiFKuov3Hd+8N2ofbI2pxt9DqkVtPrIIrwiqX3A7/6A==",
+  "dgSpecHash": "WiGVM+snytq2896xZIxqZJpWYDqNgjpBKvagJaLYxfomVV+pgmlb0ffoksmkPdDcfGhoGZOx6dMMK1Ler2TgQQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\froze\\Source\\Repos\\fkitsantas\\MoviesAPI\\MoviesAPI\\MoviesAPI.csproj",
+  "projectFilePath": "C:\\Users\\froze\\source\\repos\\MoviesAPI\\MoviesAPI\\MoviesAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\froze\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\froze\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
