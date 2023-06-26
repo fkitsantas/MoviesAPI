@@ -3,6 +3,37 @@
 This API is built using C# ASP.NET Core with Entity Framework Core and MSSQL.
 The solution uses a T-SQL stored procedure to calculate the average rating of a movie and update the corresponding value in the `Movies` table when a new rating is inserted into the `Ratings` table.
 
+## Application Requirements Coverage
+
+The API fulfills the following application requirements:
+
+### API A: Query Movie Data
+- **Endpoint**: `GET /api/movies`
+- **Parameters**: `title` (string), `yearOfRelease` (integer), `genre` (string)
+- **Description**: This endpoint allows users to query movie data based on the provided filter criteria. At least one filter criteria should be provided by the caller, else the API will return an error.
+
+### API B: Top 5 Movies by Total User Rating
+- **Endpoint**: `GET /api/movies/top5`
+- **Description**: This endpoint returns the details of the top 5 movies based on total user average ratings. In case of a rating draw, the movies are returned by ascending title alphabetical order.
+
+### API C: Top 5 Movies by a User's Rating
+- **Endpoint**: `GET /api/movies/top5/{userId}`
+- **Description**: This endpoint returns the details of the top 5 movies based on the highest ratings given by a specific user, provided by the API consumer. In case of a rating draw, the movies are returned by ascending title alphabetical order.
+
+### API D: Add or Update User Rating for a Movie
+- **Endpoint**: `POST /api/movies/rating`
+- **Parameters**: `userId` (integer), `movieId` (integer), `rating` (float)
+- **Description**: This endpoint allows API consumers to add a rating to a movie for a certain user. The rating must be an integer between 1 and 5; if the user already had a rating for that movie, the old rating should be updated to the new value.
+
+## Getting Started
+
+To get started with this API, follow these steps:
+
+1. Clone the repository to your local machine.
+2. Install the necessary dependencies.
+3. Create the necessary database and tables in MSSQL using the provided SQL scripts.
+4. Run the API and start sending requests.
+
 ## Create the MoviesAPI MSSQL Database
 
 The following code creates the necessary tables for the API:
